@@ -18,7 +18,7 @@ with io.open('README.md', encoding='utf8') as readme:
 
 setup(
     name='pyxero',
-    version=version,
+    version='10.2.0',
     description='Python API for accessing the REST API of the Xero accounting tool.',
     long_description=long_description,
     author='Russell Keith-Magee',
@@ -31,7 +31,7 @@ setup(
         'requests-oauthlib>=0.3.0',
         'python-dateutil>=2.1',
         'PyJWT==1.4.0', # This is required as part of oauthlib but doesn't seem to get included sometimes.
-        'cryptography==1.3.1', # As above, but fixes issue with missing module imports not picked up for some reason.
+        'cryptography>=1.3.1', # As above, but fixes issue with missing module imports not picked up for some reason.
     ],
     tests_require=[
         'mock',
